@@ -37,7 +37,7 @@ static esp_mqtt5_publish_property_config_t publish_property = {
     .payload_format_indicator = 1,
     .message_expiry_interval = 1000,
     .topic_alias = 0,
-    .response_topic = "/topic/test/response",
+    .response_topic = "/GVC/VM/ALL",
     .correlation_data = "123456",
     .correlation_data_len = 6,
 };
@@ -200,7 +200,7 @@ static void mqtt5_app_start(void)
         .will_delay_interval = 10,
         .payload_format_indicator = true,
         .message_expiry_interval = 10,
-        .response_topic = "/test/response",
+        .response_topic = "/GVC/VM/ALL",
         .correlation_data = "123456",
         .correlation_data_len = 6,
     };
